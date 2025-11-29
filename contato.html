@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próxima Parada - Posto de Combustivel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.jpeg" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.jpeg">
+</head>
+
+<body>
+  <header class="servi">
+    <nav aria-label="Navegação Principal do Site">
+      <ul class="menu">
+        <li class="submenu-item">
+          <a href="index.html" class="link">Home ▾</a>
+          <ul class="submenu">
+            <li><a href="lavagem.html" class="sublink">Lavagem</a></li>
+            <li><a href="oleo.html" class="sublink">Troca de Óleo</a></li>
+            <li><a href="polimento.html" class="sublink">Polimento</a></li>
+          </ul>
+        </li>
+        <li><a href="servicos.html" class="link nav-contact"> Espaço Automotivo</a></li>
+        <li><a href="cantina.html" class="link nav-contact">Conveniência</a></li>
+        <li><a href="contato.html" class="link nav-contact">Agendamento de Serviços</a></li>
+      </ul>
+    </nav>
+</header>
+
+<main>
+<section class="faixada-banner-contato"       aria-label="Sobre a conveniência">
+            <div class="banner-conteudo-contato">
+                <h1>Faça seu agendamento aqui!</h1>
+                <p>Precisa de serviços automotivos, preencha as informações a baixo, e entraremos em contato em até 24horas.</p>
+
+            </div>
+        </section>
+  
+   <section class="form_conteudo" aria-label="Forms para agendar serviços automotivos">
+
+        <form action="#" method="post">
+           
+            <fieldset>
+                <legend>Escolha o Serviço</legend>
+
+                <label for="servico">Serviço <span class="obrigatorio">*</span></label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione o serviço</option>
+                    <option value="troca-oleo">Troca de Óleo - R$ 89,90</option>
+                    <option value="alinhamento">Alinhamento e Balanceamento - R$ 120,00</option>
+                    <option value="lavagem">Lavagem Completa - R$ 65,00</option>
+                    <option value="revisao">Revisão Completa - R$ 250,00</option>
+                    <option value="freios">Manutenção de Freios - R$ 180,00</option>
+                    <option value="pneus">Troca de Pneus - A partir de R$ 200,00</option>
+                </select>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Seus Dados</legend>
+
+                <label for="nome">Nome Completo <span class="obrigatorio">*</span></label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+                <label for="telefone">Telefone <span class="obrigatorio">*</span></label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+
+                <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Dados do Veículo</legend>
+
+                <label for="marca">Marca <span class="obrigatorio">*</span></label>
+                <select id="marca" name="marca" required>
+                    <option value="">Selecione a marca</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="ford">Ford</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="renault">Renault</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="modelo">Modelo <span class="obrigatorio">*</span></label>
+                <input type="text" id="modelo" name="modelo" required placeholder="Ex: Gol, Onix, Civic">
+
+                <label for="placa">Placa</label>
+                <input type="text" id="placa" name="placa" placeholder="ABC-1234">
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Data e Horário</legend>
+
+                <label for="data">Data do Atendimento <span class="obrigatorio">*</span></label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="horario">Horário <span class="obrigatorio">*</span></label>
+                <select id="horario" name="horario" required>
+                    <option value="">Selecione o horário</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                </select>
+
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Descreva algum problema ou informação importante..."></textarea>
+            </fieldset>
+
+            <button type="submit">Confirmar Agendamento</button>
+
+            <aside class="info">
+                <p><strong>Informações:</strong></p>
+                <p>• Chegue com 10 minutos de antecedência</p>
+                <p>• Cancelamentos devem ser feitos com 24h de antecedência</p>
+                <p>• Traga os documentos do veículo</p>
+            </aside>
+        </form>
+        </section>
+</main>
+
+
+<div class="linha"></div>
+ <footer class="rodape"  aria-label="Rodapé do Site Próxima parada">
+        <div class="rodape-conteudo">
+
+            <div class="rodape-logo">
+                <img src="assets/img/logo.png" alt="Logo Keyla Taliari" />
+            </div>
+
+            <div class="rodape-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="servicos.html">Espaço automotivo</a></li>
+                    <li><a href="cantina.html">Conveniência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="rodape-contato">
+                <h4>Contato</h4>
+                <p>Email: </p>
+                <p>Telefone: </p>
+            </div>
+
+            <div class="rodape-social">
+                <h4>Siga-me</h4>
+                <a href="" target="_blank">Instagram</a><br>
+                <a href="" target="_blank">Email</a><br>
+            </div>
+        </div>
+
+        <div class="rodape-copy">
+            <p>&copy; 2025 Posto Proxima Parada, Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
